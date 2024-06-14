@@ -1,0 +1,312 @@
+/* Aplicar box-sizing a todos los elementos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del cuerpo del documento */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Estilos del encabezado */
+.header {
+  background: #f8f8f8;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Estilos del logotipo */
+.logo h1 {
+  font-size: 3em; /* Aumentar tamaño del título SpaceX */
+  font-weight: bold;
+}
+
+/* Estilos de la barra de navegación */
+.nav {
+  background: #fff;
+  padding: 10px 20px;
+  margin-top: 10px; /* Margen superior para separar del logotipo */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center; /* Centrar el contenido de la barra de navegación */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-toggle {
+  display: none; /* Ocultar el checkbox */
+}
+
+.menu-icon {
+  display: none; /* Ocultar el icono del menú por defecto */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Estilos de los enlaces en la barra de navegación */
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s; /* Transición suave para el color */
+}
+
+/* Efecto hover */
+.nav-links a:hover {
+  color: #0a132cde; /* Color del texto al hacer hover */
+  background-color: rgba(73, 106, 255, 0.726);
+}
+
+.section-uno {
+  display: flex;
+  flex-direction: column; /* Alinear elementos en columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  text-align: center;
+  height: 50vh;
+  width: 100%;
+  padding: 60px 20px;
+  background: url("img/img1.jpg"); /* Añadir imagen de fondo */
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-size: cover; /* Asegurar que la imagen cubra toda la sección */
+  color: white; /* Cambiar color del texto a blanco para mejor contraste */
+}
+
+.section-uno h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.section-uno p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.section-uno button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  max-width: 100%; /* Asegurar que el botón no se desborde */
+  white-space: nowrap; /* Evitar que el texto del botón se envuelva */
+}
+
+.section-dos {
+  padding: 50px;
+}
+
+.grid-layout {
+  display: grid;
+  justify-content: stretch;
+  width: 85%;
+  height: 45vh;
+  margin: 0 auto;
+  border: 1px solid black;
+  grid-template-areas:
+    "foto1 foto1 foto2 foto3"
+    "foto1 foto1 foto4 foto4";
+}
+
+.caja {
+  border: 4px solid black;
+  line-height: 150px;
+}
+
+.c1 {
+  grid-area: foto1;
+  background: url(img/pexels-alleksana-4157051.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.c1 h3 {
+  font-size: 2rem;
+  padding: 30px;
+}
+
+.c2 {
+  grid-area: foto2;
+  background: url(img/pexels-fotios-photos-1122765.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.c3 {
+  grid-area: foto3;
+  background: url(img/pexels-larissafarber-16434341.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.c4 {
+  grid-area: foto4;
+  background: url(img/pexels-pavel-danilyuk-5706190.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.section-tres {
+  background-color: rgba(196, 195, 195, 0.384);
+  padding: 50px;
+  text-align: center;
+}
+
+.section-tres p {
+  background-color: #f0f0f0;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.section-tres h2 {
+  font-size: 2rem;
+}
+
+.grid-layout-dos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas con tamaño igual */
+  gap: 20px; /* Espacio entre las cajas */
+  justify-items: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  padding: 20px; /* Espaciado interno */
+  width: 85%; /* Ancho máximo */
+  margin: 0 auto; /* Centrado horizontal */
+}
+
+.caja-carta {
+  width: 100%; /* Ancho completo de cada caja */
+  height: 150px; /* Altura fija */
+  border: 1px solid #ccc; /* Borde */
+  display: flex; /* Para centrar contenido verticalmente */
+  justify-content: center; /* Para centrar contenido horizontalmente */
+  align-items: center; /* Para centrar contenido verticalmente */
+  background-color: #f0f0f0; /* Color de fondo */
+}
+
+.caja1 {
+  background: url(img/pexels-fotios-photos-1122765.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.caja2 {
+  background: url(img/pexels-alleksana-4157051.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.caja3 {
+  background: url(img/pexels-larissafarber-16434341.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.caja4 {
+  background: url(img/pexels-pavel-danilyuk-5706190.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .nav-container {
+    justify-content: flex-start; /* Alinear el icono del menú a la izquierda */
+  }
+
+  .menu-icon {
+    display: block; /* Mostrar el icono del menú en pantallas pequeñas */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    display: none; /* Ocultar el menú por defecto */
+    width: 100%;
+    text-align: center; /* Centrar los ítems del menú en pantallas pequeñas */
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 10px;
+    display: block;
+  }
+
+  .menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex; /* Mostrar el menú cuando el checkbox está marcado */
+  }
+
+  .section-uno {
+    padding: 20px; /* Reducir padding en pantallas pequeñas */
+    height: auto; /* Ajustar la altura automática */
+  }
+
+  .section-uno h1 {
+    font-size: 32px; /* Reducir tamaño del texto en pantallas pequeñas */
+  }
+
+  .section-uno p {
+    font-size: 16px; /* Reducir tamaño del texto en pantallas pequeñas */
+  }
+
+  .section-uno button {
+    padding: 8px 16px; /* Ajustar tamaño del botón en pantallas pequeñas */
+  }
+
+  .grid-layout {
+    grid-template-areas:
+      "foto1 foto1"
+      "foto2 foto3"
+      "foto4 foto4";
+  }
+
+  .c1 {
+    background-position: center;
+  }
+  .c1 h3 {
+    font-size: 1rem;
+  }
+  .c2 {
+    background-position: center;
+  }
+  .c3 {
+    background-position: center + 60%;
+  }
+  .c4 {
+    background-position: bottom;
+  }
+
+  .grid-layout-dos {
+    grid-template-columns: 1fr;
+    gap: 20px; /* Espacio entre las cajas */
+  }
+}
